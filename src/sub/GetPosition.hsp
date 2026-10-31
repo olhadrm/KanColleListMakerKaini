@@ -174,6 +174,7 @@ return
 	dim scrPoint, 2
 	dim cliPoint, 2
 	hClient = 0
+	pClient = 0
 
 	scrPosX = sscap(0)
 	scrPosY = sscap(1)
@@ -181,6 +182,11 @@ return
 
 	//艦これのあるウィンドウのハンドル
 	hClient = WindowFromPoint(scrPosX, scrPosY)
+	pClient = GetAncestor(hClient, GA_ROO)
+	if (pClient != 0){
+		//親のハンドルを取りに行く
+		hClient = pClient
+	}
 
 	cliPoint(0) = scrPoint(0), scrPoint(1)
 

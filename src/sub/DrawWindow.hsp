@@ -938,8 +938,13 @@
 				objsize Scale(350), scale20
 				pos scale5, mesy
 				chkbox "動画キャプチャを有効にする", enableVideoCap: mesy += scale20
-				pos scale5, mesy
-				chkbox "録画時のCPU負荷を軽減した動画キャプチャ", lateEncode: mesy += scale20
+				pos scale5, mesy+Scale(3)
+				mes "動画キャプチャモード"
+				pos Scale(140), mesy
+				objsize Scale(160), Scale(25)
+				combox videoEncode,, "標準\nCPU負荷軽減\nnvenc_h264\nnvenc_hevc"
+				mesy += ComBoxH
+				objsize Scale(350), scale20
 				pos scale5, mesy
 				chkbox "マウスカーソルを非表示にする", videoCapHideCursor: mesy += scale20
 				pos scale5, mesy
@@ -995,6 +1000,26 @@
 				objsize Scale(80), Scale(25)
 				combox x264presetNum,, "ultrafast\nveryfast\nfaster\nfast\nmedium\nslow\nslower\nveryslow"
 				mesy += ComBoxH
+
+
+				pos Scale(5), mesy+Scale(2)
+				mes "nvencの品質(cq=21～30)"
+				pos Scale(250), mesy+Scale(2)
+				mes "標準: crf=28"
+				pos Scale(180), mesy
+				input videoCapCQ, Scale(40),  Scale(24), 2: mesy += Scale(24)
+				videoCapCRFIId = stat
+				ChgWndowStyle objinfo_hwnd(stat), 0x02
+
+				pos Scale(5), mesy+Scale(3)
+				mes "nvencのプリセット"
+				pos Scale(250), mesy+Scale(3)
+				mes "標準: p4"
+				pos Scale(140), mesy
+				objsize Scale(80), Scale(25)
+				combox nvencpresetNum,, "p1(fastest)\np2(faster)\np3(fast)\np4(medium)\np5(slow)\np6(slower)\np7(veryslow)"
+				mesy += ComBoxH
+
 
 				objsize Scale(350), Scale(50)
 				pos scale5, mesy

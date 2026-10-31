@@ -88,12 +88,15 @@
 
 	Get@iniMod "VideoCapture", "enableVideoCap", enableVideoCap, "1"
 	Get@iniMod "VideoCapture", "lateEncode", lateEncode, "1"
+	Get@iniMod "VideoCapture", "videoEncode", videoEncode, "1"
 	Get@iniMod "VideoCapture", "HideCursor", videoCapHideCursor, "0"
 	Get@iniMod "VideoCapture", "ShowFrame", videoCapShowFrame, "0"
 	Get@iniMod "VideoCapture", "EnableFFMPEGLogWindow", enableFFMPEGLogWindow, "0"
 	Get@iniMod "VideoCapture", "VideoCapFrameRate", videoCapFR, "20"
 	Get@iniMod "VideoCapture", "VideoCapCRF", videoCapCRF, "22"
 	Get@iniMod "VideoCapture", "x264presetNum", x264presetNum, "4"
+	Get@iniMod "VideoCapture", "VideoCapCQ", videoCapCQ, "28"
+	Get@iniMod "VideoCapture", "nvencpresetNum", nvencpresetNum, "4"
 	Get@iniMod "VideoCapture", "ffmpegDir", ffmpegDir, "\"\""
 	Get@iniMod "VideoCapture", "AudioDeviceName", AudioDeviceName, "\"\""
 	Get@iniMod "VideoCapture", "VideoCapSaveDir", videoCapSaveDir, "\"\""
@@ -559,12 +562,15 @@ return
 
 	Write@iniMod "VideoCapture", "enableVideoCap", enableVideoCap
 	Write@iniMod "VideoCapture", "lateEncode", lateEncode
+	Write@iniMod "VideoCapture", "videoEncode", videoEncode
 	Write@iniMod "VideoCapture", "HideCursor", videoCapHideCursor
 	Write@iniMod "VideoCapture", "ShowFrame", videoCapShowFrame
 	Write@iniMod "VideoCapture", "EnableFFMPEGLogWindow", enableFFMPEGLogWindow
 	Write@iniMod "VideoCapture", "VideoCapFrameRate", videoCapFR
 	Write@iniMod "VideoCapture", "VideoCapCRF", videoCapCRF
 	Write@iniMod "VideoCapture", "x264presetNum", x264presetNum
+	Write@iniMod "VideoCapture", "VideoCapCQ", videoCapCQ
+	Write@iniMod "VideoCapture", "nvencpresetNum", nvencpresetNum
 	Write@iniMod "VideoCapture", "AudioDeviceName", AudioDeviceName
 	Write@iniMod "VideoCapture", "ffmpegDir", ffmpegDir
 	Write@iniMod "VideoCapture", "VideoCapSaveDir", videoCapSaveDir

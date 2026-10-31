@@ -59,7 +59,7 @@
 		noteget tBuf, cnt //tBufを使い回す
 		if (strmid(tBuf, 0, 1) == "["){
 			getstr tBuf, tBuf, instr(tBuf, 0, "] ")+2, 0
-			if (strmid(tBuf, 0, 2) == " \""){
+			if (strmid(tBuf, 0, 1) == "\"" || strmid(tBuf, 0, 2) == " \""){
 				getstr tBuf, tBuf, instr(tBuf, 0, "\"")+1, '\"'
 				output + = tBuf+"\n"
 			}
