@@ -3,8 +3,8 @@
 #packopt manifest "../res/KanColleListMakerKaini.manifest"
 #packopt icon "../res/KanColleListMakerKaini.ico"
 #packopt lang "1041"
-#pack "../res/f.png"
-#pack "../res/h.png"
+#packdir "../res/f.png"
+#packdir "../res/h.png"
 
 //艦これ一覧めいかー改二 VerD0.01をベースに作成
 #define SOFTNAME "一覧めいかー改二 VerO0.01"
