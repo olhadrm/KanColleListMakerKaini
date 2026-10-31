@@ -37,8 +37,11 @@ Code licensed under the MIT License, see LICENSE.txt.
 Icon licensed under CC BY-ND 4.0: https://creativecommons.org/licenses/by-nd/4.0/
 
 ## deisysoftによる修正
-・Twitter連携機能は連携用アカウント消失により使えなくなったため、削除しています。
-・Twitter連携機能は使えなくしていますが、コード上認証情報を保存する処理自体は残っています。
+・Twitter連携機能は連携用アカウント消失により使えなくなったため、削除しています。  
+・Twitter連携機能は使えなくしていますが、コード上認証情報を保存する処理自体は残っています。  
 ・(2023/11/12)ウィンドウにフォルダをD%Dしたとき、[SS保存先][一覧保存先][連続キャプチャ保存先][範囲選択キャプチャ保存先]の設定をD&Dしたフォルダに変更する機能を追加しています。
 
+## 黒鵜織羽による修正
+・ffmpeg5系以降に対応しました。  
+・nvencでの動画キャプチャ・エンコードに対応しました。  
 
